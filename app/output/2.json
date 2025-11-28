@@ -1,0 +1,130 @@
+{
+    "ecommerce_db": {
+        "users": {
+            "user_id": "INT",
+            "username": "VARCHAR(50)",
+            "email": "VARCHAR(100)",
+            "password_hash": "VARCHAR(255)",
+            "full_name": "VARCHAR(100)",
+            "phone": "VARCHAR(20)",
+            "created_at": "TIMESTAMP",
+            "updated_at": "TIMESTAMP",
+            "status": "ENUM('active'"
+        },
+        "products": {
+            "product_id": "INT",
+            "product_name": "VARCHAR(200)",
+            "description": "TEXT",
+            "price": "DECIMAL(10",
+            "stock_quantity": "INT",
+            "category_id": "INT",
+            "brand": "VARCHAR(100)",
+            "image_url": "VARCHAR(500)",
+            "created_at": "TIMESTAMP",
+            "is_available": "BOOLEAN"
+        },
+        "orders": {
+            "order_id": "INT",
+            "user_id": "INT",
+            "order_date": "TIMESTAMP",
+            "total_amount": "DECIMAL(10",
+            "shipping_address": "TEXT",
+            "order_status": "ENUM('pending'",
+            "payment_method": "ENUM('credit_card'",
+            "tracking_number": "VARCHAR(100)"
+        }
+    },
+    "school_management": {
+        "students": {
+            "student_id": "INT",
+            "student_code": "VARCHAR(20)",
+            "first_name": "VARCHAR(50)",
+            "last_name": "VARCHAR(50)",
+            "date_of_birth": "DATE",
+            "gender": "ENUM('Male'",
+            "email": "VARCHAR(100)",
+            "phone": "VARCHAR(20)",
+            "address": "TEXT",
+            "enrollment_date": "DATE",
+            "class_id": "INT",
+            "guardian_name": "VARCHAR(100)",
+            "guardian_phone": "VARCHAR(20)"
+        },
+        "teachers": {
+            "teacher_id": "INT",
+            "teacher_code": "VARCHAR(20)",
+            "first_name": "VARCHAR(50)",
+            "last_name": "VARCHAR(50)",
+            "email": "VARCHAR(100)",
+            "phone": "VARCHAR(20)",
+            "department": "VARCHAR(100)",
+            "hire_date": "DATE",
+            "salary": "DECIMAL(10",
+            "specialization": "VARCHAR(200)",
+            "office_room": "VARCHAR(20)"
+        },
+        "courses": {
+            "course_id": "INT",
+            "course_code": "VARCHAR(20)",
+            "course_name": "VARCHAR(200)",
+            "credits": "INT",
+            "description": "TEXT",
+            "teacher_id": "INT",
+            "semester": "ENUM('Spring'",
+            "academic_year": "YEAR",
+            "max_students": "INT"
+        }
+    },
+    "hr_system": {
+        "departments": {
+            "department_id": "INT",
+            "department_name": "VARCHAR(100)",
+            "manager_id": "INT",
+            "location": "VARCHAR(200)",
+            "budget": "DECIMAL(15",
+            "established_date": "DATE",
+            "description": "TEXT"
+        },
+        "employees": {
+            "employee_id": "INT",
+            "employee_code": "VARCHAR(20)",
+            "first_name": "VARCHAR(50)",
+            "last_name": "VARCHAR(50)",
+            "email": "VARCHAR(100)",
+            "phone": "VARCHAR(20)",
+            "hire_date": "DATE",
+            "job_title": "VARCHAR(100)",
+            "department_id": "INT",
+            "salary": "DECIMAL(10",
+            "date_of_birth": "DATE",
+            "gender": "ENUM('Male'",
+            "emergency_contact": "VARCHAR(100)",
+            "emergency_phone": "VARCHAR(20)",
+            "employment_status": "ENUM('Full-time'"
+        },
+        "attendance": {
+            "attendance_id": "INT",
+            "employee_id": "INT",
+            "attendance_date": "DATE",
+            "check_in_time": "TIME",
+            "check_out_time": "TIME",
+            "work_hours": "DECIMAL(4",
+            "status": "ENUM('Present'",
+            "notes": "TEXT"
+        },
+        "payroll": {
+            "payroll_id": "INT",
+            "employee_id": "INT",
+            "pay_period_start": "DATE",
+            "pay_period_end": "DATE",
+            "basic_salary": "DECIMAL(10",
+            "overtime_pay": "DECIMAL(10",
+            "bonus": "DECIMAL(10",
+            "deductions": "DECIMAL(10",
+            "net_salary": "DECIMAL(10",
+            "payment_date": "DATE",
+            "payment_method": "ENUM('Bank",
+            "remarks": "TEXT"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+databases:
+  # 默认开发数据库
+  default:
+    host: "localhost"
+    port: 3306
+    username: "root"
+    password: "AAa123456"
+    charset: "utf8mb4"
+  
+  # 测试环境数据库
+  test:
+    host: "test-db.example.com"
+    port: 3306
+    username: "test_user"
+    password: "test_password"
+    charset: "utf8mb4"
