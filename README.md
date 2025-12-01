@@ -1,5 +1,14 @@
 # OP工具介绍
   
+## 开箱即用
+```
+1. 下载项目
+2. 准备sql文件与目标库配置文件，分别放在app/sql与app/output目录下
+3. 安装依赖 pip install --no-cache-dir -r requirements.txt
+4. 启动项目 python run.py  默认启动在5000端口，可修改run.py中的端口号
+```
+
+
 ## 镜像用法  
 
 ```shell
